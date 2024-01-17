@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('file:///C:/Users/suren/Downloads/sss.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            backdrop-filter: blur(2px);
+        }
+
+        .blur-background {
+            filter: blur(2px);
+            backdrop-filter: blur(20px); 
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px; 
+        }
+
+        .subscription-container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+            background-color: rgba(255, 255, 255, 0.8); 
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        #back {
+            border-radius: 10px;
+            width: 25%;
+        }
+    </style>
+    <title>Movie Subscription</title>
+</head>
+<body>
+    <div class="container subscription-container">
+        <h2 class="text-center mb-4">Subscribe for Exclusive Content</h2>
+        <form>
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Subscribe</button>
+            <button type="button" class="btn btn-light" id="back" onclick="window.location.href='ex.html'">BACK</button>
+        </form>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
