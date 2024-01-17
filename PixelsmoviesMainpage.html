@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pixels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html {
+    scroll-behavior: smooth;
+}
+        body {
+           
+            color: white;
+            background-color: #060606;
+        }
+
+        .navbar {
+            background-color: transparent;
+            transition: background-color 0.5s ease-in-out;
+        }
+
+        .navbar a {
+            color: white !important;
+        }
+        .navbar {
+            background-color: transparent;
+            transition: background-color 0.5s ease-in-out;
+        }
+
+        .navbar-scrolled {
+            background-color: #121212; 
+        }
+
+        .subscription-plans {
+            margin: 40px 0;
+            color:black;
+           
+        }
+
+        .footer-icons {
+            font-size: 24px;
+            margin-right: 15px;
+            color: #007bff; 
+            transition: color 0.3s ease-in-out; 
+        }
+
+        .footer-icons:hover {
+            color: #0056b3; 
+        }
+
+        footer {
+            
+            background-color: #060606;
+            padding: 20px 0;
+            text-align: center;
+            justify-content: center;
+        
+            width: 100%;
+            bottom: 0;
+        }
+
+        .copyright {
+            margin-top: 10px;
+            opacity: 0.8; 
+            transition: opacity 0.3s ease-in-out; 
+        }
+
+        .copyright:hover {
+            opacity: 1;
+        }
+       
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+        .col-md-4{
+            letter-spacing: 2px;
+        }
+        .card{
+            animation: pre;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }
+        .card-header{
+               background-color: rgb(37, 37, 224);
+               color:beige;
+               outline: #060606;
+               
+        }
+        .card-body{
+            background-color: #060606;
+            color:azure;
+            text-align: center;
+            align-items: center;
+           
+        }
+        @keyframes pre{
+            from{
+                transform: translateX(-50px);
+            }
+            to{
+                opacity: 1;
+        transform: translateX(0);
+            }
+        }
+        #pixels{
+            font-size: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #007bff;
+        }
+        #para{
+            text-align: center;
+            align-items: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style:italic;
+            animation-name: para;
+            animation: slideIn 6s ease-in-out;
+        }
+        li{
+            text-align: center;
+            align-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+           
+        }
+        @keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+#para {
+    text-align: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+  
+li {
+            text-align: center;
+            align-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            animation: slideInFromLeft 1s ease-in-out;
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i id="pixels">Pixels</i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="ex.html"><i class="fa-solid fa-house"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="subscription.html"><i class="fa-solid fa-users"></i>Subscription</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signin.html"><i class="fa-solid fa-right-to-bracket"></i>Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html"><i class="fa-solid fa-paperclip"></i>Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+ 
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="c:\Users\suren\Downloads\all.jpg" class="d-block w-100" alt="allposters.img">
+          </div>
+          <div class="carousel-item">
+            <img src="c:\Users\suren\Downloads\sss.jpg" class="d-block w-100" alt="shhotingstarposter.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="c:\Users\suren\Downloads\movie.jpg" class="d-block w-100" alt="movie.jpg" >
+          </div>
+        
+        </div>
+      
+      </div>
+
+   <p id="para"><b>Purchase any of the membership package from below.</b>
+   <li> Select in of your preferred membership package & make payment.</li>
+    <li>You can cancel your subscription anytime later.</li></p>
+    <div class="container subscription-plans fade-in">
+       
+        <h2>Subscription Plans</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        B A S I C
+                      </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Basic</h5>
+                        <p class="card-text">$9.99/month</p>
+                        <i class="fa-solid fa-check"></i>Unlimited movies and TV shows<br>
+                        <i class="fa-solid fa-check"></i>Chrome cast<br>
+                        <i class="fa-solid fa-check"></i>Multiple devices<br>
+                        <i class="fa-solid fa-xmark"></i>No Ads<br>
+                        <i class="fa-solid fa-check"></i>Live channels<br>
+                        <a href="registration.html" class="btn btn-primary">REGISTER NOW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        B A S I C +
+                      </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Standard</h5>
+                        <p class="card-text">$14.99/month</p>
+                        <i class="fa-solid fa-check"></i>Unlimited movies and TV shows<br>
+                       <i class="fa-solid fa-check"></i>Chrome cast<br>
+                       <i class="fa-solid fa-xmark"></i>Multiple devices<br>
+                       <i class="fa-solid fa-xmark"></i>No Ads<br>
+                       <i class="fa-solid fa-xmark"></i>Live channels<br>
+                        <a href="registration.html" class="btn btn-primary">REGISTER NOW</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        P R E M I N U M
+                      </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Premium</h5>
+                        <p class="card-text">$19.99/month</p>
+                        <i class="fa-solid fa-check"></i>Unlimited movies and TV shows<br>
+                        <i class="fa-solid fa-check"></i>Chrome cast<br>
+                        <i class="fa-solid fa-check"></i>Multiple devices<br>
+                        <i class="fa-solid fa-check"></i>No Ads<br>
+                        <i class="fa-solid fa-check"></i>Live channels<br>
+                        <a href="registration.html" class="btn btn-primary">REGISTER NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <footer>
+        <div class="container">
+            <a href="https://twitter.com/i/flow/login" class="footer-icons"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/login/"class="footer-icons"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/account" class="footer-icons"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div> <a href="helcenterpage.html" class="footer-icons">Help</a>
+            <a href="contactpage.html" class="footer-icons">Contact Us</a></div>
+        <div class="copyright">
+            &copy; 2024 PixlesMovie. All Rights Reserved.
+        </div>
+   </footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
