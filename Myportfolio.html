@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANCHARLA GAYATHRI - Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Georgia', 'Times New Roman', Times, serif;
+            margin: 0;
+            margin-bottom: 60px; 
+            padding: 0;
+            scroll-behavior: smooth;
+            background: linear-gradient(45deg, #01060b, #001a33);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background: linear-gradient(45deg, #01060b, #001a33);
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: background 0.5s ease;
+        }
+
+        .navbar-dark .navbar-brand,
+        .navbar-dark .navbar-nav .nav-link {
+            color: #ffffff;
+            transition: color 0.5s ease;
+        }
+
+        .navbar-dark .navbar-toggler-icon {
+            border-color: #ffffff;
+        }
+
+        .navbar-nav .nav-item:hover .nav-link {
+            color: #17a2b8;
+        }
+
+        .navbar-toggler {
+            border-color: #17a2b8;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #ffffff;
+        }
+
+        .jumbotron {
+            background: linear-gradient(45deg, #01060b, #001a33);
+            color: #fff;
+        }
+
+        .jumbotron h1, .jumbotron p {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card {
+            transition: transform 0.5s ease-in-out;
+            width: 300px;
+            margin: 0 10px 30px 10px;
+            display: inline-block;
+        }
+
+        h5 {
+            color: #ffffff;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .card-text {
+            color: #e7d7d9;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .skills, .skills2 {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .skills img, .skills2 img {
+            width: 50px;
+            height: auto;
+            margin: 10px;
+        }
+
+        .container.contact {
+            margin-top: 50px;
+        }
+
+        .card-body {
+    background: linear-gradient(45deg, #001a33, #17a2b8);
+    
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: auto;
+    max-height: 150px;
+}
+
+        .card-body::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .card-body::-webkit-scrollbar-thumb {
+            background-color: #17a2b8;
+            border-radius: 4px;
+        }
+
+        .card-body::-webkit-scrollbar-track {
+            background-color: #001a33;
+        }
+
+        #projects h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #projects .row {
+            display: flex;
+            justify-content: center;
+        }
+
+        #projects .card {
+            width: 300px;
+            margin: 0 15px 30px;
+        }
+
+        #contact .contact-links {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        #contact p {
+            margin: 10px 0;
+        }
+
+        #contact a {
+            color: #17a2b8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        .btn-primary {
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+
+        .btn-primary:hover {
+            background-color: #165670;
+            border-color: #165670;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            margin-top: -60px; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">KANCHARLA GAYATHRI</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="jumbotron text-center">
+        <div class="heading">
+            <h1 class="display-4">My Portfolio</h1>
+            <p class="lead">I'm a Web Developer.</p>
+        </div>
+    </section>
+
+    <section id="about" class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 style="text-decoration: underline;">About Me</h2>
+                <p>
+                    Hello! I'm a B.Sc graduate passionate about both frontend and backend technologies. I love building digital things that look good and work well. I've got the hang of HTML, CSS, and JavaScript for creating cool and responsive websites. On the backend, I enjoy working with PHP, and I know my way around databases like MySQL. Check out my projects, like the ATM Management System on GitHub, to see what I can do. I'm open to new opportunities and collaborations, so feel free to drop me an email or connect on LinkedIn. Let's make awesome things together!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container mt-4">
+        <h2>P R O J E C T S</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">ATM Project</h5>
+                        <p class="card-text">I used my skills to develop a website that facilitates withdrawal, deposits, bank balance inquiries, receipt generation, and language selection—features commonly performed at ATMs.</p>
+                        <a href="https://github.com/Gayathri-Kancharla/Gaya2526" class="btn btn-primary">Check Once</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pixelsmovies Website</h5>
+                        <p class="card-text">I redesigned a webpage using HTML, CSS, and Bootstrap, used a HTML is for structuring the content, CSS is for styling and making it look good, and Bootstrap is a framework that helps you do this more easily, especially for making your design work well on different devices like phones and tablets.</p>
+                        <a href="https://github.com/Gayathri-Kancharla/My-Tasks" class="btn btn-primary">Check Once</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">To Do-List</h5>
+                        <p class="card-text">A handy tool to keep track of tasks easily. It helps you stay organized with features like setting priorities, due dates, Meetings, wishes.By maintaining this, reach your goals effortlessly. 
+                            #TaskList.</p>
+                        <a href="https://github.com/Gayathri-Kancharla/My-Tasks" class="btn btn-primary">Check Once</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Payment Gateway Page</h5>
+                        <p class="card-text">Payment gateway page choose a wide range of payment methods checkout the source code for more information.</p>
+                        <a href="https://github.com/Gayathri-Kancharla/My-Tasks/blob/main/account.php" class="btn btn-primary">Check Once</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="skills">
+        <h3>S K I L L S</h3>
+        <div class="row">
+            <div class="col">
+                <img src="c:\Users\suren\Downloads\htmlimage.jpg" alt="HTML">
+            </div>
+            <div class="col">
+                <img src="c:\Users\suren\Downloads\cssimage.jpg" alt="CSS">
+            </div>
+            <div class="col">
+                <img src="c:\Users\suren\Downloads\bootstrap.jpg" alt="Bootstrap">
+            </div>
+        </div>
+    </div>
+
+    <div class="skills2">
+        <div class="row">
+            <div class="col">
+                <img src="c:\Users\suren\Downloads\php.jpg" alt="PHP">
+            </div>
+            <div class="col">
+                <img src="c:\Users\suren\Downloads\mysql.jpg" alt="MySQL">
+            </div>
+            <div class="col">
+                <img src="c:\Users\suren\Downloads\javascript.jpg" alt="JavaScript">
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="container mt-4">
+        <h2>Contact Me</h2>
+        <div class="contact-links">
+            <p><strong>Name:</strong> KVS GAYATHRI</p>
+            <p><strong>Email:</strong> kvs.gayathri25@gmail.com</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kvsgayathri" target="_blank">LinkedIn Profile</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Gayathri-Kancharla" target="_blank">GitHub Profile</a></p>
+        </div>
+    </section>
+    
+    <footer class="text-center mt-4">
+        <p>&copy; 2024 KANCHARLA GAYATHRI. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
